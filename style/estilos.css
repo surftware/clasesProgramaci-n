@@ -1,16 +1,30 @@
-img{  
+#tituloPrincipal {
+    font-size: 24px;
+    font-weight: bold;
+    color: #567;
+    text-align: center;
 }
 
+.tituloSecundario {
+    font-size: 18px;
+    font-weight: bold;
+    color: #567;
+    text-align: center;
+}
 
+#imagenesPrincipales{
 
-.imagenesPrincipales{
-    width: 400px;
-    height: 300px;
-    border-radius:69%;
     text-align: center;
     display:block;
     margin:auto;
     
+}
+
+.imagenArriba{
+    width: 400px;
+    height: 300px;
+    border-radius:69%;
+
 }
 
 
@@ -33,4 +47,12 @@ iframe{
     display:block;
     margin:auto;
     
+}
+
+.imagenAbajo{
+    width: 400px;
+    height: 300px;
+    border-radius: 0%;
+
+
 }
