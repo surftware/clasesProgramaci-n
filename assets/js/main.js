@@ -105,3 +105,9 @@ sr.reveal(`.home__data, .home__img,
             .footer__content`, {
     interval: 200
 })
+
+
+function funcionYahir(){
+    alert('Hola Mundo' + 6*5)
+    console.log('Yahir')
+}

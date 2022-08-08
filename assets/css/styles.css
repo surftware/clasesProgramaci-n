@@ -108,6 +108,16 @@ img{
 }
 
 /*========== CLASS CSS ==========*/
+.imgPrincipal{
+  border-radius: 100%;
+}
+
+.mapa{
+  width:380px;
+  height:380px;
+  border:0; 
+  border-radius: 0.5rem;
+}
 .section{
   padding: 4rem 0 2rem;
 }
