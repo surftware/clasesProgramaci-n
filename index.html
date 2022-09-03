@@ -14,12 +14,18 @@
     <title>La Chilanguita | Comida Mexicana</title>
 </head>
 
-<body>
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo">Chilanga</a>
 
-    <!--========== SCROLL TOP ==========-->
-    <a href="#" class="scrolltop" id="scroll-top">
-        <i class='bx bx-chevron-up scrolltop__icon'></i>
-    </a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Principal</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">Acerca de</a></li>
+                        <li class="nav__item"><a href="#services" class="nav__link">Servicios</a></li>
+                        <li class="nav__item"><a href="#menu" class="nav__link">MENU</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contacto</a></li>
 
     <!--========== HEADER ==========-->
     <header class="l-header" id="header">
@@ -34,25 +40,29 @@
                     <li class="nav__item"><a href="#menu" class="nav__link">Men&uacute;</a></li>
                     <li class="nav__item"><a href="#contact" class="nav__link">Cont&aacute;ctanos</a></li>
 
-                    <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
-                </ul>
-            </div>
-
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
-            </div>
-        </nav>
-    </header>
-
-    <main class="l-main">
-        <!--========== HOME ==========-->
-        <section class="home" id="home">
-            <div class="home__container bd-container bd-grid">
-                <div class="home__data">
-                    <h1 class="home__title">La Chilanguita</h1>
-                    <h2 class="home__subtitle">La comida chilanga<br>Ahora en Mazatlán</h2>
-                    <a href="#menu" onclick="" class="button">Ver Menu</a>
+        <main class="l-main">
+            <!--========== HOME ==========-->
+            <section class="home" id="home">
+                <div class="home__container bd-container bd-grid">
+                    <div class="home__data">
+                        <h1 class="home__title">La Chilanga</h1>
+                        <h2 class="home__subtitle">Prueba la mejor comida <br> al estilo de la CDMX.</h2>
+                        <a href="file:///C:/Users/yantr/Desktop/clasesProgramaci-n/index.html#menu" class="button">MENU</a>
+                    </div>
+    
+                    <img src="assets/img/home.jpg" alt="" class="home__img">
                 </div>
+            </section>
+            
+            <!--========== ABOUT ==========-->
+            <section class="about section bd-container" id="about">
+                <div class="about__container  bd-grid">
+                    <div class="about__data">
+                        <span class="section-subtitle about__initial">Acerca de</span>
+                        <h2 class="section-title about__initial">Nosotros hacemos la <br>comida mas sabrosa </h2>
+                        <p class="about__description">Los mejores guisados de todo Mazatlan, con un toque especial del sazon picoso de la CDMX, no te arrepentiras.</p>
+                        <a href="#" class="button">Explorar historia</a>
+                    </div>
 
                 <img src="assets/img/tacos.jpg" alt="chilanguita-tacos" class="home__img imgPrincipal">
             </div>
@@ -69,9 +79,10 @@
                     <a href="#" class="button">Explorar Historia</a>
                 </div>
 
-                <img src="assets/img/about.jpg" alt="" class="about__img">
-            </div>
-        </section>
+            <!--========== SERVICES ==========-->
+            <section class="services section bd-container" id="services">
+                <span class="section-subtitle">Escoja</span>
+                <h2 class="section-title">Nuestro increible servicio</h2>
 
         <!--========== SERVICES ==========-->
         <section class="services section bd-container" id="services">
@@ -139,12 +150,11 @@
                             16.2587 19.2125C15.7877 18.8585 15.1191 18.9533 14.7651 19.4243C14.7588 
                             19.4327 14.7527 19.441 14.7467 19.4496C8.5796 27.928 9.48706 39.6308 
                             16.8875 47.057C17.3045 47.4744 17.9811 47.4746 18.3984 47.0576C18.8157 
-                            46.6405 18.816 45.964 18.3989 45.5466Z" />
-                    </svg>
-                    <h3 class="services__title">Excellent food</h3>
-                    <p class="services__description">We offer our clients excellent quality services for many years,
-                        with the best and delicious food in the city.</p>
-                </div>
+                            46.6405 18.816 45.964 18.3989 45.5466Z"/>
+                        </svg>
+                        <h3 class="services__title">Excelente comida</h3>
+                        <p class="services__description">Ofrecemos a nuestros clientes servicios de excelente calidad.</p>
+                    </div>
 
                 <div class="services__content">
                     <svg class="services__img" xmlns="http://www.w3.org/2000/svg">
@@ -303,12 +313,11 @@
                             <clipPath id="clip0">
                                 <rect width="64" height="64" fill="white" />
                             </clipPath>
-                        </defs>
-                    </svg>
-                    <h3 class="services__title">Fast food</h3>
-                    <p class="services__description">We offer our clients excellent quality services for many years,
-                        with the best and delicious food in the city.</p>
-                </div>
+                            </defs>
+                        </svg>
+                        <h3 class="services__title">Comida rapida</h3>
+                        <p class="services__description">Tenemos platiyos para todas las prioridades, siempre pensando en el tiempo</p>
+                    </div>
 
                 <div class="services__content">
                     <svg class="services__img" xmlns="http://www.w3.org/2000/svg">
@@ -355,106 +364,137 @@
                             13.3402 36.9993 13.4527 37.1998 13.6516L44.4823 20.9341C44.6828 21.1341 44.7948 21.4059 44.7948 21.6892V37.8696H11.732V28.2707ZM13.6646 
                             49.6016C13.4766 49.9255 13.3177 50.2661 13.1901 50.6181L12.1736 49.6016H13.6646ZM14.9316 
                             52.8012C14.9316 50.4452 16.8418 48.535 19.1978 48.535C21.5537 48.535 23.4639 50.4452 23.4639 
-                            52.8012C23.4639 55.1572 21.5537 57.0674 19.1978 57.0674C16.8418 57.0674 14.9316 55.1572 14.9316 52.8012Z" />
-                        </g>
-                        <defs>
-                            <clipPath id="clip0">
-                                <rect width="64" height="64" fill="white" />
-                            </clipPath>
-                        </defs>
-                    </svg>
-                    <h3 class="services__title">Delivery</h3>
-                    <p class="services__description">We offer our clients excellent quality services for many years,
-                        with the best and delicious food in the city.</p>
+                            52.8012C23.4639 55.1572 21.5537 57.0674 19.1978 57.0674C16.8418 57.0674 14.9316 55.1572 14.9316 52.8012Z"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0">
+                                <rect width="64" height="64" fill="white"/>
+                                </clipPath>
+                                </defs>
+                        </svg>
+                        <h3 class="services__title">Entrega</h3>
+                        <p class="services__description">Nuestro servicio de repartidor esta pensando para una entrega de alta calidad de nuestros alimentos.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!--========== MENU ==========-->
-        <section class="menu section bd-container" id="menu">
-            <span class="section-subtitle">Special</span>
-            <h2 class="section-title">Menu of the week</h2>
+            <!--========== MENU ==========-->
+            <section class="menu section bd-container" id="menu">
+                <span class="section-subtitle">Especial</span>
+                <h2 class="section-title">Menu de la semana</h2>
 
-            <div class="menu__container bd-grid">
-                <div class="menu__content">
-                    <img src="assets/img/plate1.png" alt="" class="menu__img">
-                    <h3 class="menu__name">Barbecue salad</h3>
-                    <span class="menu__detail">Delicious dish</span>
-                    <span class="menu__preci">$22.00</span>
-                    <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
-                </div>
+                <div class="menu__container bd-grid">
+                    <div class="menu__content">
+                        <img src="assets/img/plate1.jpg" alt="" class="menu__img">
+                        <h3 class="menu__name">Huarache completo</h3>
+                        <span class="menu__detail">Excelente platillo</span>
+                        <span class="menu__preci">$80.00</span>
+                        <a href="https://www.facebook.com/Gabrilasalaschilanga/photos/p.2137015136480179/2137015136480179" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
 
-                <div class="menu__content">
-                    <img src="assets/img/plate2.png" alt="" class="menu__img">
-                    <h3 class="menu__name">Salad with fish</h3>
-                    <span class="menu__detail">Delicious dish</span>
-                    <span class="menu__preci">$12.00</span>
-                    <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
-                </div>
-
-                <div class="menu__content">
-                    <img src="assets/img/plate3.png" alt="" class="menu__img">
-                    <h3 class="menu__name">Spinach salad</h3>
-                    <span class="menu__detail">Delicious dish</span>
-                    <span class="menu__preci">$9.50</span>
-                    <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
-                </div>
-            </div>
-        </section>
-
-        <!--===== APP =======-->
-        <section class="app section bd-container">
-            <div class="app__container bd-grid">
-                <div class="app__data">
-                    <span class="section-subtitle app__initial">App</span>
-                    <h2 class="section-title app__initial">App is aviable</h2>
-                    <p class="app__description">Find our application and download it, you can make reservations, food
-                        orders, see your deliveries on the way and much more.</p>
-                    <div class="app__stores">
-                        <a href="#"><img src="assets/img/app1.png" alt="" class="app__store"></a>
-                        <a href="#"><img src="assets/img/app2.png" alt="" class="app__store"></a>
+                    <div class="menu__content">
+                        <img src="assets/img/plate2.jpg" alt="" class="menu__img">
+                        <h3 class="menu__name">Gorditas de guisados</h3>
+                        <span class="menu__detail">Blancas y Azules</span>
+                        <span class="menu__preci">$42.00</span>
+                        <a href="https://www.facebook.com/Gabrilasalaschilanga/photos/p.2137015136480179/2137015136480179" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+                    
+                    <div class="menu__content">
+                        <img src="assets/img/plate3.jpg" alt="" class="menu__img">
+                        <h3 class="menu__name">Quesadillas de guisados</h3>
+                        <span class="menu__detail">Blancas y Azules</span>
+                        <span class="menu__preci">$35.00</span>
+                        <a href="https://www.facebook.com/Gabrilasalaschilanga/photos/p.2137015136480179/2137015136480179" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
                     </div>
                 </div>
 
-                <img src="assets/img/movil-app.png" alt="" class="app__img">
-            </div>
-        </section>
-
-        <!--========== CONTACT US ==========-->
-        <section class="contact section bd-container" id="contact">
-            <div class="contact__container bd-grid">
-                <div class="contact__data">
-                    <span class="section-subtitle contact__initial">Pide ya!</span>
-                    <h2 class="section-title contact__initial">Envío a Domicilio</h2>
-                    <p>Abierto 24Hrs.</p>
-                    <p class="contact__description">La comida más sabrosa al alcance de un click.</p>
-                    
-
-                        <div class="contact__button">
-                            <a href="#" class="button">Haz tu pedido</a>
+            <!--===== APP =======-->
+            <section class="app section bd-container">
+                <div class="app__container bd-grid">
+                    <div class="app__data">
+                        <span class="section-subtitle app__initial">Redes</span>
+                        <h2 class="section-title app__initial">Visitanos</h2>
+                        <p class="app__description">Siguenos en Facebook e Instagram para estar enterad@s de nuestras promociones y eventos.</p>
+                        <div class="app__stores">
+                            <a href="https://www.facebook.com/Gabrilasalaschilanga/">
+                                <img src="assets/img/app1.png" alt="" class="app__store"></a>
+                            <a href="https://www.instagram.com/lachilangaes/">
+                                <img allowfullscreen="" src="assets/img/app2.png" alt="" class="app__store">
+                                
+                            </a>
                         </div>
+                    </div>
+
+                    <img src="assets/img/movil-app.jpg" alt="" class="app__img">
                 </div>
 
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.121440337275!2d-106.42326668562217!3d23.202244515412602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x869f53969e61d577%3A0x7851949383bf9f5d!2sMercado%20Pino%20Suarez%20Mazatl%C3%A1n!5e0!3m2!1ses-419!2smx!4v1659921790888!5m2!1ses-419!2smx"
-                    allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
+            <!--========== CONTACT US ==========-->
+            <section class="contact section bd-container" id="contact">
+                <div class="contact__container bd-grid">
+                    <div class="contact__data">
+                        <span class="section-subtitle contact__initial">Ayuda</span>
+                        <h2 class="section-title contact__initial">Contactanos</h2>
+                        <p class="contact__description">Si quieres reservar mesa en nuestro restaurante, contacta con nosotros y te atenderemos lo antes posible.</p>
+                    </div>
 
-                
+                    <div class="contact__button">
+                        <a href="#" class="button">Contactanos ahora</a>
+                    </div>
+                </div>
             </div>
         </section>
-    </main>
 
-    <!--========== FOOTER ==========-->
-    <footer class="footer section bd-container">
-        <div class="footer__container bd-grid">
-            <div class="footer__content">
-                <a href="#" class="footer__logo">Tasty Food</a>
-                <span class="footer__description">Restaurant</span>
-                <div>
-                    <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
-                    <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
-                    <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+        <!--========== FOOTER ==========-->
+        <footer class="footer section bd-container">
+            <div class="footer__container bd-grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">Comida deliciosa</a>
+                    <span class="footer__description">Restaurante</span>
+                    <div>
+                        <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
+                        <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
+                        <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Servicios</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Entrega</a></li>
+                        <li><a href="#" class="footer__link">Precios</a></li>
+                        <li><a href="#" class="footer__link">Comida rapida</a></li>
+                        <li><a href="#" class="footer__link">Reservaciones</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Informacion</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Eventos</a></li>
+                        <li><a href="#" class="footer__link">Contacto</a></li>
+                        <li><a href="#" class="footer__link">Privacidad</a></li>
+                        <li><a href="#" class="footer__link">Terminos de los servicios</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Direccion</h3>
+                    <ul>
+
+                    <a href="https://www.google.com.mx/maps/place/La+Chilanga+es./@23.1959753,-106.4228029,17z/data=!3m1!4b1!4m5!3m4!1s0x869f536982dbc3c1:0x330d8c751d149e26!8m2!3d23.1959922!4d-106.4206231"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.2934136956615!2d-106.42280288507743!3d23.195975284865536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x869f536982dbc3c1%3A0x330d8c751d149e26!2sLa%20Chilanga%20es.!5e0!3m2!1ses-419!2smx!4v1661799524414!5m2!1ses-419!2smx" 
+                        width="200" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe></a>
+                        <li>Mazatlan - Sinaloa</li>
+                        <li>Avenida Miguel Aleman #400</li>
+                        <li>5589645859</li>
+                        <li></li>
+                    </ul>
                 </div>
             </div>
 
